@@ -5,16 +5,19 @@
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
+    "dev:mobile": "expo start --dev-client --clear",
+    "dev:mobile:build": "eas build --profile development --platform android --local",
     "ios": "expo start --ios",
     "web": "expo start --web"
   },
   "dependencies": {
-    "@solana-mobile/mobile-wallet-adapter-protocol": "^0.9.9",
-    "expo": "~47.0.8",
-    "expo-status-bar": "~1.4.2",
-    "react": "18.1.0",
-    "react-native": "0.70.5",
-    "expo-dev-client": "~2.0.1"
+    "@solana-mobile/mobile-wallet-adapter-protocol": "^2.0.1",
+    "@solana-mobile/mobile-wallet-adapter-protocol-web3js": "^2.0.1",
+    "expo": "~48.0.18",
+    "expo-dev-client": "~2.2.1",
+    "expo-status-bar": "~1.4.4",
+    "react": "18.2.0",
+    "react-native": "0.71.8"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
